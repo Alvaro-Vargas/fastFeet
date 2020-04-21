@@ -1,0 +1,5 @@
+{
+  "_comment": "This file intent is to overwrite some overlapping rules between eslint and prettier",
+  "singleQuote": true,
+  "trailingComma": "es5"
+}

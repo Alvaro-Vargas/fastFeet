@@ -1,0 +1,11 @@
+//this file does not support de the 'import/export' syntax.
+//Import 'resolve' to standardize the paths in mac/windows/linux
+const { resolve } = require('path');
+
+//Export an object with the path to our files:
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'),
+  'models-path': resolve(__dirname, 'src', 'app', 'models'),
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+}
