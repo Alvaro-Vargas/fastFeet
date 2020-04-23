@@ -16,39 +16,39 @@ This project is part of the GoStack boot-camp by Rocketseat. It is a complete ap
 
 ![](https://media.giphy.com/media/9tA6H1madRvUc/giphy.gif)
 
-### **Tools**
+### **Backend**
 
+- **Yarn** - Package Manager
 - **Express** - Web Framework
-- **Sucrase** - Allow to use more recent JS functionalities.
-- **Nodemon** - Monitor changes and restart the server
-- **ESLint** - Style guide: Airbnb
-- **Prettier** - Code formatter
-- **EditorConfig** - Plugin to keep user/workspace settings
 - **Sequelize** -  ORM
-- **PostgreSQL** - DB
 - **YUP** - Schema validation
 - **bcrypt** - Create/Validate password hash
 - **jwt** - Create/validate sessions
 
-### **Functionalities**
-- CRUD - Users :bust_in_silhouette:
-  - [x] C
-  - [ ] R
-  - [x] U
-  - [ ] D
+___
 
-- CRUD Recipients :inbox_tray:
-  - [x] C
-  - [ ] R
-  - [x] U
-  - [ ] D
+- **Sucrase** - Allow to use more recent JS functionalities.
+- **Nodemon** - Monitor changes and restart the server
 
-- Authentication :lock:
-  - [x] Users connect to the application via user/password.
+___
+- **ESLint** - Style guide: Airbnb
+- **Prettier** - Code formatter
+- **EditorConfig** - Plugin to keep user/workspace settings
+
+### Frontend
+- RactJs - Web
+- React Native - Mobile
+
+### Business Requirements
+- As a user I should be able to create and update my information.
+- Only admins should be able to do the following:
+  - Only adm can create recipients
+  - Only adm can create other admins
+
+#### Authentication
+  - Users connect to the application via user/password.
     - Once connected they will be authenticated via the session token (**jwt**)
-  * Some functionalities are restricted to Admin users
-    - [x] Only adm can create recipients
-    - [x] Only adm can create other adms
+
 
 
 
