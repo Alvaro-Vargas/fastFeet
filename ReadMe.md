@@ -181,3 +181,5 @@ Folder icons.
         "javascript": "jsx"
     },
 ```
+---
+This project is under MIT License. :pencil:
