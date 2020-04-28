@@ -1,17 +1,17 @@
-// This file contains the credentials to connect to our DB
 // This file does not support the new 'import/export' syntax, as the 'squelize-cli' does not support it.
 
 // Check the DIALECTS sequelize documentation > POSTGRES:
 // 'For PostgreSQL, two libraries are needed, pg@^7.0.0 and pg-hstore.'
 
-// Export an configuration object
+require('dotenv/config');
+
 module.exports = {
   dialect: 'postgres',
-  host: 'localhost', // Where you can find your db
-  port: '5433',
-  username: 'admin',
-  password: 'admin', // Click -> https://i.kym-cdn.com/entries/icons/mobile/000/023/397/C-658VsXoAo3ovC.jpg
-  database: 'fastfeet',
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
   define: {
     timestamp: true, // Creates columns created_at and updated_at in every DB table
     underscored: true,
