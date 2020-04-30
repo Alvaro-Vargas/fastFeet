@@ -96,7 +96,29 @@ class DeliverymenController {
   }
 
   async delete(req, res) {
-    return res.json({ ok: true });
+    // Check if the user is admin
+    if (!req.isAdmin) {
+      return res.status(400).json({
+        error: 'You mus be a admin to register a Deliveryman!',
+      });
+    }
+
+    // Validating req.body
+    const schema = Yup.object().shape({
+      email: Yup.string().email(),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Validation fails' });
+    }
+
+    const deliverymen = await Deliverymen.findOne({
+      where: { email: req.body.email },
+    });
+
+    await deliverymen.destroy();
+
+    return res.json(`Deliveryman ${req.body.email} successfully deleted`);
   }
 }
 
