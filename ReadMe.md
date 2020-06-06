@@ -12,7 +12,7 @@
 
 ## :rocket: About
 
-This project is part of the GoStack boot-camp by Rocketseat. It is a complete application (Back-end, Front-end e Mobile) for a fictional transporter: **FastFeet**. <br>
+This project is part of the GoStack boot-camp by Rocketseat. It is a complete application (Back-end, Front-end e Mobile) for a fictional shipping company: **FastFeet**. <br>
 
 ![](https://media.giphy.com/media/9tA6H1madRvUc/giphy.gif)
 
